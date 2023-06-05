@@ -10,7 +10,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 设置环境变量
-ENV PORT=80
+ENV PORT=443
 
 # 启动应用
 CMD ["python3", "BingServer.py"]
@@ -22,4 +22,4 @@ FROM nginx:alpine
 COPY ./static /usr/share/nginx/html
 
 # 暴露 80 端口
-EXPOSE 80
+EXPOSE 443
