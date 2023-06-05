@@ -12,9 +12,6 @@ COPY . .
 # 设置环境变量
 ENV PORT=80
 
-# 暴露 80 端口
-EXPOSE 80
-
 # 启动应用
 CMD ["python3", "BingServer.py"]
 
