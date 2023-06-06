@@ -249,9 +249,10 @@
           };
 
           ws.onerror = function(error) {
-            console.error('WS Error:', error);
+            console.log('WS Error:', error);
             $scope.readyToAnswer = true;
           };
+
 
 
         }
