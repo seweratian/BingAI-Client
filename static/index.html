@@ -248,10 +248,11 @@
             ConnectToServer();
           };
 
-          ws.onerror = function(error){
-            console('WS Error:'+error);
+          ws.onerror = function(error) {
+            console.error('WS Error:', error);
             $scope.readyToAnswer = true;
           };
+
 
         }
 
